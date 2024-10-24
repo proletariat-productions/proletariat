@@ -2,16 +2,21 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a; /* Dark background */
-    color: #e0e0e0; /* Light grey text for readability */
+    background-color: #000; /* Black background */
+    color: #e0e0e0; /* Light grey text */
 }
 
 header {
-    background-color: #262626; /* Darker header background */
+    background-color: transparent; /* Transparent header for logo visibility */
     color: #f2f2f2; /* Light text */
     padding: 1rem;
     text-align: center;
     border-bottom: 2px solid #444; /* Subtle border for structure */
+}
+
+.logo {
+    max-width: 200px; /* Adjust based on your logo size */
+    margin-bottom: 1rem; /* Space between logo and navigation */
 }
 
 nav ul {
@@ -31,24 +36,20 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Highlight on hover, a touch of color */
+    color: #ffcc00; /* Highlight on hover */
 }
 
 section {
-    padding: 2rem;
+    padding: 4rem 2rem; /* More padding for better layout */
     margin: 2rem;
-    background-color: #2e2e2e; /* Darker grey background for sections */
+    background-color: rgba(50, 50, 50, 0.9); /* Dark grey with slight transparency */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
 
 h1, h2 {
-    font-weight: normal; /* Keeps headings grounded, not too flashy */
+    font-weight: normal; /* Keeps headings grounded */
     color: #f2f2f2; /* Consistent light text */
-}
-
-p {
-    line-height: 1.6;
 }
 
 footer {
