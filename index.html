@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proletariat Productions</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script> <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
 </head>
-<body>
+<body onload="AOS.init()">
     <header>
-        <h1>Proletariat Productions</h1>
+        <img src="path/to/your/logo.png" alt="Proletariat Productions Logo" class="logo"> <!-- Update the path to your logo -->
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -19,23 +21,22 @@
         </nav>
     </header>
 
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <h2>About Us</h2>
         <p>Welcome to Proletariat Productions. We specialize in socially responsible films and creative projects.</p>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>Here’s a selection of our latest work...</p>
-        <!-- You can add links or images for projects here -->
     </section>
 
-    <section id="services">
+    <section id="services" data-aos="fade-up">
         <h2>Our Services</h2>
         <p>From casting to production, we offer a range of film production services.</p>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
         <h2>Contact Us</h2>
         <p>Email: <a href="mailto:info@proletariatproductions.com">info@proletariatproductions.com</a></p>
     </section>
@@ -43,5 +44,9 @@
     <footer>
         <p>&copy; 2024 Proletariat Productions</p>
     </footer>
+    
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
 </body>
 </html>
